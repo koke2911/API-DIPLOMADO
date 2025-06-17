@@ -33,9 +33,9 @@ API desarrollada para el diplomado FullStack, utilizando Node.js, Express y Dock
 
 ### 4. Acceder a la documentación Swagger
 
-  Una vez levantado el entorno, abre en tu navegador:
+    Una vez levantado el entorno, abre en tu navegador:
 
-http://localhost:3000/api/docs/
+    http://localhost:3000/api/docs/
 
 📦 Tecnologías utilizadas
 
