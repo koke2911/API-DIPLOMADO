@@ -10,16 +10,19 @@ API desarrollada para el diplomado FullStack, utilizando Node.js, Express y Dock
 
 ```bash
 git clone https://github.com/tu-usuario/API-DIPLOMADO.git
-cd API-DIPLOMADO
+
 
 2. Instalar dependencias
+cd API-DIPLOMADO/api
 
 npm install
 
 Esto instalará todos los módulos necesarios definidos en el archivo package.json.
 
-3. Levantar el entorno con Docker
+3. Levantar el entorno con Docker 
+Retroceder al directorio principal 
 
+cd ..
 docker compose up --build
 
 Este comando construye la imagen y levanta los servicios definidos en el docker-compose.yml.
