@@ -11,14 +11,14 @@ API desarrollada para el diplomado FullStack, utilizando Node.js, Express y Dock
 git clone https://github.com/tu-usuario/API-DIPLOMADO.git
 
 
-2. Instalar dependencias
+### 2. Instalar dependencias
 cd API-DIPLOMADO/api
 
 npm install
 
 Esto instalará todos los módulos necesarios definidos en el archivo package.json.
 
-3. Levantar el entorno con Docker 
+### 3. Levantar el entorno con Docker 
 Retroceder al directorio principal 
 
 cd ..
@@ -26,7 +26,7 @@ docker compose up --build
 
 Este comando construye la imagen y levanta los servicios definidos en el docker-compose.yml.
 
-4. Acceder a la documentación Swagger
+### 4. Acceder a la documentación Swagger
 
 Una vez levantado el entorno, abre en tu navegador:
 
@@ -41,7 +41,7 @@ http://localhost:3000/api/docs/
 
     Swagger (Documentación de API)
 
-🧾 Requisitos
+### 🧾 Requisitos
 
     Node.js >= 18
 
@@ -50,5 +50,5 @@ http://localhost:3000/api/docs/
     Puerto 3000 libre en tu entorno local
 
 
-Desarrollado por Victor Martínez
+### Desarrollado por Victor Martínez
 https://github.com/koke2911
