@@ -1,6 +1,6 @@
 # API DIPLOMADO
 
-API desarrollada para el diplomado FullStack, utilizando Node.js, Express y Docker. Incluye documentación Swagger para facilitar el uso de los endpoints.
+API desarrollada para el diplomado FullStack, utilizando Node.js, Express, postgreSQL, Docker. Incluye documentación Swagger para facilitar el uso de los endpoints.
 
 ---
 
