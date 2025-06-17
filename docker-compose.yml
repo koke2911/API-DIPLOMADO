@@ -1,0 +1,41 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:17
+    container_name: api-diplomado
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: diplomado
+    ports:
+      - '5432:5432'
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    networks:
+      - api-network
+
+  api:
+    build: 
+      context: ./api
+      dockerfile: Dockerfile
+    volumes:
+      - ./api:/usr/src/app
+    container_name: api-backend
+    restart: on-failure
+    env_file:
+      - api/src/.env
+    ports:
+      - '3000:3000'
+    depends_on:
+      - postgres
+    networks:
+      - api-network
+
+volumes:
+  postgres-data:
+
+networks:
+  api-network:
+    driver: bridge
