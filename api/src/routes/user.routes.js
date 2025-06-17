@@ -173,7 +173,7 @@ const { getAuthenticatedUser, getAllUsers, deleteUser, updateUser, updatePasswor
 /**
  * @swagger
  * /usuarios/{id}/contrasena:
- *   patch:
+ *   put:
  *     summary: Cambiar contraseña del usuario
  *     tags: [Usuarios]
  *     security:
@@ -217,7 +217,7 @@ const { getAuthenticatedUser, getAllUsers, deleteUser, updateUser, updatePasswor
 
 router.use(verifyToken)
 router.get('/me', getAuthenticatedUser);
-router.patch('/:id/contrasena', updatePassword);
+router.put('/:id/contrasena', updatePassword);
 router.get('/all', getAllUsers);
 router.delete('/:id', deleteUser);
 router.patch('/:id', updateUser);
