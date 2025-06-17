@@ -8,7 +8,6 @@ API desarrollada para el diplomado FullStack, utilizando Node.js, Express y Dock
 
 ### 1. Clonar el repositorio
 
-```bash
 git clone https://github.com/tu-usuario/API-DIPLOMADO.git
 
 
