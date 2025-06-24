@@ -161,8 +161,7 @@ const { getAuthenticatedUser, getAllUsers, deleteUser, updateUser, updatePasswor
  *                       type: string
  *                     rol:
  *                       type: string
- *                     nacimeinto:
- *                       type: string
+ *                    
  *       400:
  *         description: Error en la solicitud
  *       403:
